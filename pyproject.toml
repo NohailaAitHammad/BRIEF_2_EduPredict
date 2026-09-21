@@ -1,0 +1,21 @@
+[project]
+name = "datastore360"
+version = "0.1.0"
+description = "Edupredict"
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "ydata-profiling",
+    "psycopg2-binary",
+    "jupyter",
+    "jupyterlab",
+    "ipykernel",
+    "python-dotenv",
+    "setuptools<81",
+    "scikit-learn"
+]
