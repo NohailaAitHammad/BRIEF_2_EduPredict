@@ -51,3 +51,8 @@ Encodage utilisÃ© : **encodage ordinal** (0, 1, 2 selon l'ordre croissant).
 ## Valeurs manquantes
 
 Les colonnes `Teacher_Quality`, `Parental_Education_Level` et `Distance_from_Home` contiennent des valeurs manquantes. Elles sont remplacÃ©es par le **mode** (valeur la plus frÃ©quente) de chaque colonne.
+
+
+
+
+Notice that we are splitting the dataset before we do any data preprocessing (such as encoding, replacing NaNs, etc). There are two schools of thoughts here - one is that we should do the data preprocessing first before we split the data. The other school of thought is that we should split the data before doing any data preprocessing. In general, to prevent "data leaks", it is better to split the data first, and then preprocess the training data independently of the testing data. After the model has been trained with the training data, you can then preprocess the testing data and feed it to the model to evaluate it.
